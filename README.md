@@ -6,12 +6,17 @@
 
 👉 **https://uarchsolution.github.io/bd-studio/**
 
-> **GitHub Pages enable করতে:**
-> 1. এই repo-তে যান → **Settings** → **Pages**
-> 2. Source: **Deploy from a branch**
-> 3. Branch: **main**  |  Folder: **/ (root)**
-> 4. **Save** করুন
-> 5. 1–2 মিনিট পর উপরের লিংক live হবে
+### Full working version upload করতে (আবশ্যক)
+
+বর্তমান index.html ছোট/incomplete। পুরো কাজ করার জন্য:
+
+1. Chat-এ যে **studio.html** file আছে সেটা download করুন
+2. নাম পরিবর্তন করে **index.html** রাখুন
+3. এই repo-তে যান → **Add file** → **Upload files**
+4. index.html drag & drop করে Upload করুন (overwrite করবে)
+5. তারপর **Settings → Pages** → Source: main / root → Save
+
+1-2 মিনিট পর লিংক থেকে **full BD STUDIO** চলবে (সব feature কাজ করবে)।
 
 ## Features
 - Bangla font (SolaimanLipi, Kalpurush, Lohit Bengali)
