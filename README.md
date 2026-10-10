@@ -1,37 +1,55 @@
 # BD STUDIO
 
-**Bangla Document Editor** for legal & official documents (stamp area, seals, signatures, witnesses, tables, chapters, etc.).
+**Professional Bangla Document Editor** for legal & official documents  
+(stamp area, seals, signatures, witnesses, tables, chapters and more).
 
-## 🚀 Live Public Link
+## 🚀 Live
 
 👉 **https://uarchsolution.github.io/bd-studio/**
 
-### Full working version upload করতে (আবশ্যক)
+## New Features (Production)
 
-বর্তমান index.html ছোট/incomplete। পুরো কাজ করার জন্য:
+### Save & Export
+- **Local** — Browser storage (auto-save)
+- **Save As** — Manage multiple documents
+- **HTML** — Download full document
+- **PDF** — Print → Save as PDF
+- **JPEG** — Export current page
+- **Google Drive** — Download + open Drive
+- **Dropbox** — Download + open Dropbox
 
-1. Chat-এ যে **studio.html** file আছে সেটা download করুন
-2. নাম পরিবর্তন করে **index.html** রাখুন
-3. এই repo-তে যান → **Add file** → **Upload files**
-4. index.html drag & drop করে Upload করুন (overwrite করবে)
-5. তারপর **Settings → Pages** → Source: main / root → Save
-
-1-2 মিনিট পর লিংক থেকে **full BD STUDIO** চলবে (সব feature কাজ করবে)।
-
-## Features
-- Bangla font (SolaimanLipi, Kalpurush, Lohit Bengali)
-- Legal size (8.5"×13") + stamp area
-- Full Edit mode + Undo/Redo
-- Save / Load / Auto-save (localStorage)
-- Insert: Chapter, Clause, Powers list, A/B/C, Table, Witness, Signature, Seal
+### Other
+- Page size selector on open (Legal / A4 / Letter / Court / Custom)
+- Portrait / Landscape
+- Full Bangla support
 - Find & Replace
-- Logo upload + Favicon
-- Print / PDF ready
-- Responsive + 5 Themes
-- Page management (add/remove/duplicate)
+- Logo + Favicon
+- 5 Themes
+- Mobile responsive
+
+## Google Search (SEO)
+
+- Meta tags, Open Graph, canonical added
+- `robots.txt` + `sitemap.xml` published
+
+**To appear on Google when searching "BD STUDIO":**
+1. Go to [Google Search Console](https://search.google.com/search-console)
+2. Add property → `https://uarchsolution.github.io/bd-studio/`
+3. Verify ownership (HTML tag or DNS)
+4. Submit sitemap: `https://uarchsolution.github.io/bd-studio/sitemap.xml`
+5. Request indexing for the homepage
+
+Usually takes a few days to appear.
+
+## How to update the live site
+
+1. Download the latest `BD-STUDIO-PRO.html` from the conversation
+2. Rename to `index.html`
+3. Upload to this repo (overwrite)
+4. Wait 1–2 minutes
 
 ## Repository
 https://github.com/uarchsolution/bd-studio
 
 ---
-**BD STUDIO** — Made for Bangladesh legal & official paperwork.
+**BD STUDIO** — Production-ready Bangla legal document editor.
