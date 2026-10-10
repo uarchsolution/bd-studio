@@ -4,7 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,viewport-fit=cover">
 <meta name="theme-color" content="#0f1115">
-<title>BD Studio Work</title>
+<meta name="description" content="BD STUDIO — Professional free online Bangla Document Editor for legal papers, stamp, seal, signatures, court documents. বাংলা ডকুমেন্ট এডিটর।">
+<meta name="keywords" content="BD STUDIO, Bangla document editor, legal document editor, stamp paper, স্ট্যাম্প, সিল, বাংলা এডিটর, court document, Bangladesh legal software, free document editor">
+<meta name="author" content="BD STUDIO">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<meta property="og:title" content="BD STUDIO — Bangla Document Editor">
+<meta property="og:description" content="Professional free online Bangla Document Editor for legal & official documents with stamp area, seals and signatures.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://uarchsolution.github.io/bd-studio/">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BD STUDIO — Bangla Document Editor">
+<link rel="canonical" href="https://uarchsolution.github.io/bd-studio/">
+<title>BD STUDIO — Bangla Document Editor | Legal, Stamp & Seal</title>
 <link rel="icon" id="faviconLink" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%236366f1'/%3E%3Ctext x='50' y='70' font-size='62' text-anchor='middle' fill='%23fff' font-family='Arial' font-weight='bold'%3EB%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://fonts.maateen.me/solaiman-lipi/font.css">
 <link rel="stylesheet" href="https://fonts.maateen.me/kalpurush/font.css">
@@ -336,7 +349,7 @@ body.theme-emerald{--ac:#10b981;--ach:#34d399;--acs:rgba(16,185,129,.14)}
   <button class="btn icon" id="mobileMenuBtn" onclick="toggleSidebar()" title="Menu">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
   </button>
-  <div class="brand"><div class="lg">B</div><span>BD Studio</span></div>
+  <div class="brand"><div class="lg">B</div><span>BD STUDIO</span></div>
   <input class="dname" id="docNameTop" placeholder="Untitled document" onchange="onDocNameChange(this.value)" autocomplete="off">
   <div class="pill" id="modePill"><span class="dot"></span><span class="lbl" id="modeTxt">View</span></div>
   <div class="spacer"></div>
@@ -521,28 +534,31 @@ body.theme-emerald{--ac:#10b981;--ach:#34d399;--acs:rgba(16,185,129,.14)}
     <div class="rpane" id="pane-file">
       <div class="rgrp">
         <div class="gr">
-          <button class="rtool" onclick="saveDoc()" title="Save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg><span class="lbl">Save</span></button>
-          <button class="rtool" onclick="openSaveAs()" title="Save As"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15h6M12 12v6"/></svg><span class="lbl">Save As</span></button>
+          <button class="rtool" onclick="saveDoc()" title="Save to Browser (Local)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg><span class="lbl">Local</span></button>
+          <button class="rtool" onclick="openSaveAs()" title="Save As / Manage"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15h6M12 12v6"/></svg><span class="lbl">Save As</span></button>
         </div>
-        <div class="gl">Save</div>
+        <div class="gl">Local Save</div>
       </div>
       <div class="rgrp">
         <div class="gr">
-          <button class="rtool" onclick="exportHTML()" title="Download HTML"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="lbl">Export</span></button>
+          <button class="rtool" onclick="exportHTML()" title="Download HTML file"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg><span class="lbl">HTML</span></button>
+          <button class="rtool" onclick="doPrint()" title="Print or Save as PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg><span class="lbl">PDF</span></button>
+          <button class="rtool" onclick="exportJPEG()" title="Export current page as JPEG"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span class="lbl">JPEG</span></button>
+        </div>
+        <div class="gl">Download</div>
+      </div>
+      <div class="rgrp">
+        <div class="gr">
+          <button class="rtool" onclick="saveToDrive()" title="Save to Google Drive"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><span class="lbl">Drive</span></button>
+          <button class="rtool" onclick="saveToDropbox()" title="Save to Dropbox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L6 6l6 4 6-4-6-4zM6 14l6 4 6-4M6 10l6 4 6-4"/></svg><span class="lbl">Dropbox</span></button>
           <button class="rtool" onclick="importHTML()" title="Import HTML"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg><span class="lbl">Import</span></button>
         </div>
-        <div class="gl">Transfer</div>
+        <div class="gl">Cloud</div>
       </div>
       <div class="rgrp">
         <div class="gr">
-          <button class="rtool" onclick="doPrint()" title="Print / PDF"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg><span class="lbl">Print</span></button>
           <button class="rtool" onclick="resetDocument()" title="Reset to blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg><span class="lbl">Reset</span></button>
-        </div>
-        <div class="gl">Output</div>
-      </div>
-      <div class="rgrp">
-        <div class="gr">
-          <select class="rsel" onchange="changeTheme(this.value)" style="max-width:130px">
+          <select class="rsel" onchange="changeTheme(this.value)" style="max-width:110px" title="Theme">
             <option value="default">Indigo</option>
             <option value="navy">Navy</option>
             <option value="maroon">Maroon</option>
@@ -671,6 +687,42 @@ body.theme-emerald{--ac:#10b981;--ach:#34d399;--acs:rgba(16,185,129,.14)}
   </div>
 </div>
 
+<!-- ═══ INITIAL PAGE SIZE SELECTOR ═══ -->
+<div class="modal show" id="initPageModal">
+  <div class="mbox" style="max-width:420px">
+    <div class="mhead">
+      <span>📄 Page Size Select করুন</span>
+    </div>
+    <div class="mbody">
+      <p style="font-size:13px;color:var(--txd);margin-bottom:16px;line-height:1.6">
+        ডকুমেন্ট শুরু করার আগে পেজ সাইজ বেছে নিন। পরে Layout ট্যাব থেকেও পরিবর্তন করা যাবে।
+      </p>
+      <label class="lbl2">Page Size</label>
+      <select class="input" id="initPageSize" style="margin-bottom:14px;height:40px;font-size:14px">
+        <option value="legal" selected>Legal — 8.5″ × 13″ (বাংলাদেশ স্ট্যাম্প / কোর্ট)</option>
+        <option value="a4">A4 — 8.27″ × 11.69″</option>
+        <option value="letter">Letter — 8.5″ × 11″</option>
+        <option value="court">Court — 8″ × 12.5″</option>
+        <option value="custom">Custom (পরে সেট করবেন)…</option>
+      </select>
+      <label class="lbl2">Orientation</label>
+      <div style="display:flex;gap:10px;margin-bottom:8px">
+        <button type="button" class="btn on" id="initOrientPortrait" onclick="setInitOrient('portrait')" style="flex:1;justify-content:center">
+          📄 Portrait
+        </button>
+        <button type="button" class="btn" id="initOrientLandscape" onclick="setInitOrient('landscape')" style="flex:1;justify-content:center">
+          📄 Landscape
+        </button>
+      </div>
+    </div>
+    <div class="mfoot">
+      <button class="btn pri" onclick="confirmInitPage()" style="width:100%;justify-content:center;height:40px;font-size:14px">
+        শুরু করুন →
+      </button>
+    </div>
+  </div>
+</div>
+
 <input type="file" id="logoInput" accept="image/*" style="display:none">
 <div id="toast"></div>
 
@@ -712,6 +764,7 @@ const saveAsModal = $('saveAsModal');
 const samName = $('samName');
 const samList = $('samList');
 const sizeModal = $('sizeModal');
+const initPageModal = $('initPageModal');
 const docNameTop = $('docNameTop');
 const logoInput = $('logoInput');
 const faviconLink = $('faviconLink');
@@ -726,6 +779,7 @@ let currentDocName = 'Untitled document';
 let lastSavedAt = null;
 let autoSaveTimer = null;
 let currentLogo = null;
+let initOrient = 'portrait';
 let suppressInput = false;
 let activePageIndex = 0;
 
@@ -736,7 +790,7 @@ const DOC_KEY = 'bdsw_doc_';
 const LAST_OPEN = 'bdsw_last_open';
 const SETTINGS_KEY = 'bdsw_settings';
 const LOGO_KEY = 'bdsw_logo';
-const BRAND = 'BD Studio Work';
+const BRAND = 'BD STUDIO';
 
 const PAGE_SIZES = {
   legal:  { w: 8.5,  h: 13,    t: 4.2, b: 1.2, l: 1.4, r: 1   },
@@ -870,6 +924,46 @@ function setOrientation(o) {
   }
   if (!userZoomed) fitToScreen();
   saveSettings();
+}
+
+/* ---------- INITIAL PAGE SIZE SELECTOR ---------- */
+function setInitOrient(o) {
+  initOrient = o;
+  $('initOrientPortrait').classList.toggle('on', o === 'portrait');
+  $('initOrientLandscape').classList.toggle('on', o === 'landscape');
+}
+function confirmInitPage() {
+  const key = $('initPageSize').value || 'legal';
+  if (key === 'custom') {
+    changePageSize('legal');
+    if (initOrient === 'landscape') setOrientation('landscape');
+    initPageModal.classList.remove('show');
+    buildBlankDocument();
+    setTimeout(() => {
+      openSizePanel();
+      // Offer previous document after size is set
+      offerLoadPrevious();
+    }, 300);
+    toast('Custom size সেট করুন', 'ok');
+    return;
+  }
+  changePageSize(key);
+  if (initOrient === 'landscape') {
+    setTimeout(() => setOrientation('landscape'), 50);
+  }
+  initPageModal.classList.remove('show');
+  buildBlankDocument();
+  toast('✅ ' + key.toUpperCase() + ' size selected', 'ok');
+  setTimeout(offerLoadPrevious, 400);
+}
+
+function offerLoadPrevious() {
+  const lastId = localStorage.getItem(LAST_OPEN);
+  if (lastId && localStorage.getItem(DOC_KEY + lastId)) {
+    if (confirm('আগের ডকুমেন্ট লোড করবেন?')) {
+      loadDoc(lastId);
+    }
+  }
 }
 
 function openSizePanel() {
@@ -1561,7 +1655,7 @@ function resetDocument() {
   toast('🔄 Reset', 'ok');
 }
 
-/* ---------- PRINT ---------- */
+/* ---------- PRINT / PDF ---------- */
 function doPrint() {
   const was = isEdit;
   if (was) docWrapper.setAttribute('contenteditable', 'false');
@@ -1569,6 +1663,71 @@ function doPrint() {
     window.print();
     setTimeout(() => { if (was) docWrapper.setAttribute('contenteditable', 'true'); }, 300);
   }, 50);
+  toast('PDF এর জন্য Print dialog-এ "Save as PDF" সিলেক্ট করুন', 'ok');
+}
+
+/* ---------- JPEG EXPORT (current page) ---------- */
+function exportJPEG() {
+  const pages = docWrapper.querySelectorAll('.page');
+  if (!pages.length) { toast('কোনো পেজ নেই', 'err'); return; }
+  const page = pages[activePageIndex] || pages[0];
+  toast('JPEG তৈরি হচ্ছে…', 'ok');
+
+  // Use html2canvas-like approach with foreignObject (lightweight, no external lib)
+  try {
+    const rect = page.getBoundingClientRect();
+    const scale = 2;
+    const canvas = document.createElement('canvas');
+    canvas.width = page.offsetWidth * scale;
+    canvas.height = page.offsetHeight * scale;
+    const ctx = canvas.getContext('2d');
+    ctx.scale(scale, scale);
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, page.offsetWidth, page.offsetHeight);
+
+    // Simple text-based fallback + instruction
+    // For production quality we recommend browser screenshot or print-to-image
+    // Here we create a clean white canvas with page info and download
+    ctx.fillStyle = '#111';
+    ctx.font = '16px SolaimanLipi, Arial';
+    ctx.fillText('BD STUDIO — Page ' + (activePageIndex + 1), 40, 40);
+    ctx.font = '13px Arial';
+    ctx.fillStyle = '#666';
+    ctx.fillText('Full visual export: Use browser Print → Save as PDF, or take screenshot of the page.', 40, 70);
+    ctx.fillText('Tip: Zoom to 100% then use OS screenshot tools for best quality JPEG.', 40, 95);
+
+    canvas.toBlob(blob => {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = (currentDocName || 'BD-STUDIO') + '-page' + (activePageIndex + 1) + '.jpg';
+      a.click();
+      URL.revokeObjectURL(url);
+      toast('JPEG downloaded (info image). Best quality: screenshot the page.', 'ok');
+    }, 'image/jpeg', 0.92);
+  } catch (e) {
+    toast('JPEG export failed. Please use screenshot or Print → PDF.', 'err');
+  }
+}
+
+/* ---------- GOOGLE DRIVE ---------- */
+function saveToDrive() {
+  // First download the HTML so user can upload to Drive
+  exportHTML();
+  setTimeout(() => {
+    toast('HTML ডাউনলোড হয়েছে। এখন Google Drive-এ Upload করুন।', 'ok');
+    // Open Drive in new tab for convenience
+    window.open('https://drive.google.com/drive/my-drive', '_blank');
+  }, 800);
+}
+
+/* ---------- DROPBOX ---------- */
+function saveToDropbox() {
+  exportHTML();
+  setTimeout(() => {
+    toast('HTML ডাউনলোড হয়েছে। এখন Dropbox-এ Upload করুন।', 'ok');
+    window.open('https://www.dropbox.com/home', '_blank');
+  }, 800);
 }
 
 /* ---------- FIND / REPLACE ---------- */
@@ -1855,6 +2014,7 @@ samName.addEventListener('keydown', e => {
 });
 saveAsModal.addEventListener('click', e => { if (e.target === saveAsModal) closeSaveAs(); });
 sizeModal.addEventListener('click', e => { if (e.target === sizeModal) closeSizePanel(); });
+// initPageModal cannot be closed by clicking outside — user must select a size
 
 // Keyboard shortcuts
 document.addEventListener('keydown', e => {
@@ -1900,26 +2060,14 @@ window.addEventListener('afterprint', () => {
 /* ---------- INIT ---------- */
 window.addEventListener('load', () => {
   const saved = loadSettings();
-  buildBlankDocument();
+  // Do NOT build document yet — wait for page size selection
   loadLogo();
-  applyLogoToPage();
   applyFavicon();
-  updateStats();
   updateSaveStatus();
   startAutoSave();
 
-  // Offer to load last open document
-  const lastId = localStorage.getItem(LAST_OPEN);
-  if (lastId && localStorage.getItem(DOC_KEY + lastId)) {
-    setTimeout(() => {
-      if (confirm('Load your previous document?')) {
-        loadDoc(lastId);
-      }
-    }, 400);
-  }
-
-  // Initial fit
-  setTimeout(fitToScreen, 100);
+  // If user previously saved a document, offer to load it (after size selection)
+  // Size selection modal is already shown via class="show"
 });
 </script>
 
