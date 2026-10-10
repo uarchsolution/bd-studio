@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://uarchsolution.github.io/bd-studio/sitemap.xml
